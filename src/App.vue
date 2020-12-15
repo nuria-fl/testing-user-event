@@ -1,0 +1,40 @@
+<template>
+  <div>
+    <label for="checkbox">My checkbox</label>
+    <input type="checkbox" id="checkbox" v-model="isChecked" />
+    {{ isChecked }}
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      isChecked: false,
+    };
+  },
+};
+</script>
+
+<style>
+body {
+  background: #eee;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+</style>
